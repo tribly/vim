@@ -32,6 +32,11 @@ syntax on
 filetype plugin on
 filetype indent on
 
+"for latexsuite
+"set grepprg=grep\ -nH\ $*
+"let g:tex_flavor = "latex"
+"set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+
 
 set rtp+=/home/heinz/.vim/bundle/powerline/powerline/bindings/vim
 set number
