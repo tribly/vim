@@ -114,6 +114,7 @@ endif
 :map <F3> :set paste!<CR>
 nmap <F8> :TagbarToggle<CR>
 nmap <F5> :NERDTreeToggle<CR>
+nmap <F6> :GitGutterToggle<CR>
 
 " pasting to tb
 nmap <F12> :!fb %<CR>
