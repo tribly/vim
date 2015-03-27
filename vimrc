@@ -118,4 +118,4 @@ nmap <F6> :GitGutterToggle<CR>
 
 " pasting to tb
 nmap <F12> :!fb %<CR>
-com -range=% Fb :exec "<line1>,<line2>w !fb -e " . &filetype . " -n " . expand("%:t")
+com -range=% Fb :exec "<line1>,<line2>w !fb -n " . expand("%:t")
