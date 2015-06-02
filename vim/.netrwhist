@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/home/heinz/sync/uni/software_engineering/maize/src/the-amazing-maize-maze-mapping/explorer/src'
-let g:netrw_dirhist_2='/home/tribly/blog'
-let g:netrw_dirhist_3='/var/www/virtual/tribly/paste.tribly.de/scripts'
