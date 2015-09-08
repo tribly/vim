@@ -17,17 +17,11 @@ let mapleader = ","
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-
-" RainbowParentheses
-let g:rbpt_max = 16
-let g:rbpt_loadcmd_toggle = 0
-"au VimEnter * RainbowParenthesesToggle
+let g:ultisnips_python_style="doxygen"
 
 let NERDTreeIgnore = ['\.class$']
 
-
 syntax on
-
 
 filetype plugin on
 filetype indent on
@@ -109,6 +103,8 @@ endif
 
 :nnoremap <leader>f zfa}
 :nnoremap <leader>a :Tabularize /=
+nnoremap Q <nop>
+nnoremap K <nop>
 
 :map <F2> :set number! relativenumber!<CR>
 :map <F3> :set paste!<CR>
