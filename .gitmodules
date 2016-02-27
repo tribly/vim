@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-operator-highlight"]
 	path = vim/bundle/vim-operator-highlight
 	url = https://github.com/Valloric/vim-operator-highlight
+[submodule "vim/bundle/vim-liquid"]
+	path = vim/bundle/vim-liquid
+	url = https://github.com/tpope/vim-liquid
