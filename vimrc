@@ -115,3 +115,5 @@ nmap <F6> :GitGutterToggle<CR>
 " pasting to tb
 nmap <F12> :!fb %<CR>
 com -range=% Fb :exec "<line1>,<line2>w !fb -n " . expand("%:t")
+
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  setf markdown
