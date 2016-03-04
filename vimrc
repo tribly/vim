@@ -3,8 +3,10 @@ execute pathogen#infect()
 let g:molokai_original = 1
 let g:rehash256 = 1
 
-let g:airline_powerline_fonts = 1
-let g:airline_theme = "dark"
+"let g:airline_powerline_fonts = 1
+"let g:airline_theme = "dark"
+
+let g:powerline_pycmd = "py3"
 
 let mapleader = ","
 
@@ -32,7 +34,7 @@ filetype indent on
 "set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
 
-set rtp+=/home/heinz/.vim/bundle/powerline/powerline/bindings/vim
+"set rtp+=/usr/lib/python3.5/site-packages/powerline/bindings/vim
 set number
 set t_Co=256
 set cul
