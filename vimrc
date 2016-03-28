@@ -114,8 +114,11 @@ nmap <F8> :TagbarToggle<CR>
 nmap <F5> :NERDTreeToggle<CR>
 nmap <F6> :GitGutterToggle<CR>
 
-" pasting to tb
+" pasting to fb
 nmap <F12> :!fb %<CR>
 com -range=% Fb :exec "<line1>,<line2>w !fb -n " . expand("%:t")
 
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  setf markdown
+
+" Go to the first empty line on new mails
+autocmd BufRead ~/.mutt/temp/* execute "normal /^$/\n"
