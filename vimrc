@@ -106,6 +106,7 @@ endif
 :nnoremap <leader>f zfa}
 :nnoremap <leader>a :Tabularize /=
 nnoremap Q <nop>
+nnoremap gQ <nop>
 nnoremap K <nop>
 
 :map <F2> :set number! relativenumber!<CR>
