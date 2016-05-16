@@ -62,9 +62,8 @@ set lazyredraw
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup on, and place all files in a tmp dir
-set swapfile
-set dir=~/.vim/tmp
+" Turn backup off
+set noswapfile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
