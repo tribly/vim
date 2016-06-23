@@ -3,16 +3,11 @@ execute pathogen#infect()
 let g:molokai_original = 1
 let g:rehash256 = 1
 
-"let g:airline_powerline_fonts = 1
-"let g:airline_theme = "dark"
-
-let g:powerline_pycmd = "py3"
+let g:airline_theme='raven'
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 let mapleader = ","
-
-"let g:clang_snippets = 1
-"let g:clang_snippets_engine = 'ultisnips'
-"set completeopt=menu,menuone
 
 " lets ultisnip use tab as the seletor
 " instead of the default c-j/k
@@ -28,13 +23,6 @@ syntax on
 filetype plugin on
 filetype indent on
 
-"for latexsuite
-"set grepprg=grep\ -nH\ $*
-"let g:tex_flavor = "latex"
-"set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
-
-
-"set rtp+=/usr/lib/python3.5/site-packages/powerline/bindings/vim
 set number
 set t_Co=256
 set cul
