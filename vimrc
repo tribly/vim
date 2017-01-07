@@ -1,4 +1,39 @@
-execute pathogen#infect()
+"dein Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=/home/heinz/.vim/bundle/repos/github.com/Shougo/dein.vim
+
+" Required:
+if dein#load_state('/home/heinz/.vim/bundle')
+  call dein#begin('/home/heinz/.vim/bundle')
+
+  " Let dein manage dein
+  " Required:
+  call dein#add('/home/heinz/.vim/bundle/repos/github.com/Shougo/dein.vim')
+
+  " Add or remove your plugins here:
+  call dein#add('SirVer/ultisnips')
+  call dein#add('Valloric/vim-operator-highlight')
+  call dein#add('junegunn/goyo.vim')
+  call dein#add('scrooloose/nerdcommenter')
+  call dein#add('vim-syntastic/syntastic')
+  call dein#add('godlygeek/tabular')
+  call dein#add('mbbill/undotree')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
+
+" Required:
+filetype plugin indent on
+syntax enable
+"End dein Scripts-------------------------
 
 let g:molokai_original = 1
 let g:rehash256 = 1
@@ -17,11 +52,6 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:ultisnips_python_style="doxygen"
 
 let NERDTreeIgnore = ['\.class$']
-
-syntax on
-
-filetype plugin on
-filetype indent on
 
 set number
 set t_Co=256
@@ -61,7 +91,6 @@ set shiftwidth=4
 set tabstop=4
 " Use spaces instead of tabs
 set expandtab
-
 
 " Linebreak on 500 characters
 set lbr
