@@ -51,8 +51,6 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:ultisnips_python_style="doxygen"
 
-let NERDTreeIgnore = ['\.class$']
-
 set number
 set t_Co=256
 set cul
@@ -102,10 +100,6 @@ set nowrap "Don't wrap lines
 
 colorscheme molokai
 
-" Show me I've written more than 80 chars in a line
-"highlight OverLength ctermbg=darkred ctermfg=white guibg=#ffffff
-"match OverLength /\%81v.\+/
-
 if ! has('gui_running')
     set ttimeoutlen=10
     augroup FastEscape
@@ -124,7 +118,6 @@ nnoremap K <nop>
 :map <F2> :set number! relativenumber!<CR>
 :map <F3> :set paste!<CR>
 nmap <F8> :TagbarToggle<CR>
-nmap <F5> :NERDTreeToggle<CR>
 nmap <F6> :GitGutterToggle<CR>
 
 " pasting to fb
