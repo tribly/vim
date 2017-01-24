@@ -1,2 +1,2 @@
 100
-['/home/heinz/.vim/bundle/repos/github.com/Shougo/dein.vim', 'SirVer/ultisnips', 'Valloric/vim-operator-highlight', 'godlygeek/tabular', 'junegunn/goyo.vim', 'mbbill/undotree', 'scrooloose/nerdcommenter', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes', 'vim-syntastic/syntastic']
+['/home/heinz/.vim/bundle/repos/github.com/Shougo/dein.vim/', 'SirVer/ultisnips', 'Valloric/vim-operator-highlight', 'godlygeek/tabular', 'junegunn/goyo.vim', 'mbbill/undotree', 'scrooloose/nerdcommenter', 'vim-airline/vim-airline', 'vim-airline/vim-airline-themes', 'vim-syntastic/syntastic']
