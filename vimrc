@@ -3,8 +3,27 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-set runtimepath+=/home/heinz/.vim/bundle/repos/github.com/Shougo/dein.vim
+let s:dein_base = '/home/heinz/.vim/bundle'
+let s:dein_repo_path = s:dein_base . '/repos/github.com/Shougo/dein.vim'
+let s:dein_repo_url = 'https://github.com/Shougo/dein.vim'
+let &runtimepath.=','.s:dein_repo_path
+
+" dein.vim
+let g:dein#types#git#clone_depth = 1
+try
+	if dein#load_state(s:dein_base)
+		call dein#begin(s:dein_base)
+		call dein#end()
+		call dein#save_state()
+	endif
+catch /E117:/ " dein not installed
+	execute "silent !git clone" s:dein_repo_url s:dein_repo_path
+	call dein#begin(s:dein_base)
+	set nomore
+	call dein#install()
+	call dein#end()
+	quit
+endtry
 
 " Required:
 if dein#load_state('/home/heinz/.vim/bundle')
