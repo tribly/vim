@@ -3,7 +3,7 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-let s:dein_base = '/home/heinz/.vim/bundle'
+let s:dein_base = '~/.vim/bundle'
 let s:dein_repo_path = s:dein_base . '/repos/github.com/Shougo/dein.vim'
 let s:dein_repo_url = 'https://github.com/Shougo/dein.vim'
 let &runtimepath.=','.s:dein_repo_path
@@ -26,12 +26,12 @@ catch /E117:/ " dein not installed
 endtry
 
 " Required:
-if dein#load_state('/home/heinz/.vim/bundle')
-  call dein#begin('/home/heinz/.vim/bundle')
+if dein#load_state('~/.vim/bundle')
+  call dein#begin('~/.vim/bundle')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/heinz/.vim/bundle/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.vim/bundle/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('SirVer/ultisnips')
