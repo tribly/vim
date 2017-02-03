@@ -43,6 +43,8 @@ if dein#load_state('~/.vim/bundle')
   call dein#add('mbbill/undotree')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('rust-lang/rust.vim')
+  call dein#add('racer-rust/vim-racer')
 
   " Required:
   call dein#end()
