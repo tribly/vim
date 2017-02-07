@@ -45,6 +45,7 @@ if dein#load_state('~/.vim/bundle')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('rust-lang/rust.vim')
   call dein#add('racer-rust/vim-racer')
+  call dein#add('honza/vim-snippets')
 
   " Required:
   call dein#end()
