@@ -46,6 +46,7 @@ if dein#load_state('~/.vim/bundle')
   call dein#add('rust-lang/rust.vim')
   call dein#add('racer-rust/vim-racer')
   call dein#add('honza/vim-snippets')
+  call dein#add('majutsushi/tagbar')
 
   " Required:
   call dein#end()
